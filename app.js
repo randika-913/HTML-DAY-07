@@ -43,3 +43,8 @@ function checkGuess() {
     }
 
 }
+
+function resetRandomNum() {
+    txtUserInput.value = "";
+    randomNum = Math.floor(Math.random() * 10) + 1;
+}
