@@ -8,7 +8,7 @@ function checkGuess() {
     if (randomNum == userGuess) {
         
     Swal.fire({
-        title: "Weldone Soldier",
+        title: "Welldone Soldier",
         text: "You guessed the number correctly !!",
         imageUrl: "https://media.tenor.com/iBLzg9X4HbQAAAAM/clapping-leonardo-dicaprio.gif",
         imageWidth: 400,
