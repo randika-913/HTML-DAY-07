@@ -1,9 +1,33 @@
-let ranNumber = Math.random()*10+1;
+let randomNum = Math.floor(Math.random() * 10) + 1;
 
-let randomNum = Math.floor(ranNumber);
+function checkGuess() {
+   
+    let userGuess = parseInt(document.getElementById("txtUserInput").value);
+    let result = document.getElementById("message");
 
-console.log(randomNum);
+    if (randomNum == userGuess) {
+        
+    Swal.fire({
+        title: "Weldone Soldier",
+        text: "You guessed the number correctly !!",
+        imageUrl: "https://media.tenor.com/iBLzg9X4HbQAAAAM/clapping-leonardo-dicaprio.gif",
+        imageWidth: 400,
+        imageHeight: 200,
+        imageAlt: "Custom image"
+    });
 
-function btnGuessNumberOnAction(){
-    
+    }else{
+
+    Swal.fire({
+        title: "Aiyoo Naaa",
+        text: "You guessed the number incorrectly !!",
+        imageUrl: "https://media.tenor.com/rVITf4xkgrkAAAAM/steve-carell-no.gif",
+        imageWidth: 400,
+        imageHeight: 200,
+        imageAlt: "Custom image"
+    });
+
+    }
+
+
 }
